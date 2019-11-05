@@ -21,4 +21,8 @@ public class StudentDB {
     public void setStudents(ArrayList<Student> students) {
         mStudents = students;
     }
+
+    public void addStudent(Student student){
+        mStudents.add(student);
+    }
 }

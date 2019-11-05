@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class Student {
     protected String mFirstName;
     protected String mLastName;
-    protected int mCWID;
+    protected String mCWID;
     protected ArrayList<CourseEnrollment> mCourses;
 
-    public Student(String firstName, String lastName, int CWID) {
+    public Student(String firstName, String lastName, String CWID) {
         mFirstName = firstName;
         mLastName = lastName;
         mCWID = CWID;
@@ -38,11 +38,11 @@ public class Student {
         mCourses = courses;
     }
 
-    public int getCWID() {
+    public String getCWID() {
         return mCWID;
     }
 
-    public void setCWID(int CWID) {
+    public void setCWID(String CWID) {
         mCWID = CWID;
     }
 }
